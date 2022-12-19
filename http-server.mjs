@@ -1,14 +1,8 @@
-const http = require('http');
+import http from "http";
 
-const requestListener = (request, response) => {
-    response.setHeader('Content-Type', 'text/html');
+const server = http.createServer((req, res) => {
+    res.write("hello http server");
+    res.end();
+})
 
-    response.statusCode = 200;
-    response.end('<h1>Halo HTTP Server!</h1>');
-};
-
-
-const server = http.createServer(requestListener);
-
-const port = 5000;
-const host = 'localhost';
+server.listen(3000);

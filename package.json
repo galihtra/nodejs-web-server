@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "server.js"
+    "run": "server.mjs"
   },
   "keywords": [],
   "author": "",
